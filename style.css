@@ -17,7 +17,9 @@
     border-radius:10px;
     background-color:rgba(255, 69, 199, 0.07);
 }
-
+.card{
+    min-height: fit-content;
+}
 body{
     font-family:'poppins';
     background-image: radial-gradient(circle, #c21b69 1px, transparent 1px);
@@ -104,7 +106,7 @@ input:hover{
     display:flex;
     justify-content: center;
     align-items:center ;
-    height:100svh;
+    height:100vh;
     margin-bottom:0px;
     flex-direction:row;
     gap:40px;
@@ -161,7 +163,21 @@ h5{
 }
 .data,.imgs{
     backdrop-filter:blur(2px);
-        
+
+    
+}
+.data{
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+
+}
+#emblem,#flag{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:1000%;
 }
 
 img{
@@ -188,7 +204,7 @@ img{
         flex-direction: column;
     }
     .card{
-        margin-top:10%;
+        margin-top:110%;
         padding-bottom:8%;
     }
 
@@ -213,6 +229,7 @@ img{
     }
     .settings{
         height:30px;
+        
     }
 
     

@@ -65,9 +65,9 @@ let nations = function(e){
         .then(item => {
             
             document.querySelector('.e').style.display='none';
-            document.querySelector('.data').style.display='block';
-            document.querySelector('#emblem').style.display='block';
-            document.querySelector('#flag').style.display='block';
+            document.querySelector('.data').style.display='flex';
+            document.querySelector('#emblem').style.display='flex';
+            document.querySelector('#flag').style.display='flex';
             document.querySelector('.cname').innerText=item.name+' '; //
             //document.querySelector('.flag').innerText=item[0].flag; 
             document.querySelector('.pop').innerText=item.population;//
