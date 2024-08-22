@@ -63,7 +63,7 @@ let nations = function(e){
         
         .then(data => data.json())
         .then(item => {
-            
+            document.querySelector('.card').style.marginTop='110%';
             document.querySelector('.e').style.display='none';
             document.querySelector('.data').style.display='flex';
             document.querySelector('#emblem').style.display='flex';
@@ -101,7 +101,7 @@ let nations = function(e){
         
         .then(data => data.json())
         .then(item => {
-            
+            document.querySelector('.card').style.marginTop='110%';
             document.querySelector('.data').style.display='block';
             document.querySelector('.e').style.display='none';
             document.querySelector('#emblem').style.display='block';
@@ -136,7 +136,7 @@ let nations = function(e){
         
         .then(data => data.json())
         .then(item => {
-            
+            document.querySelector('.card').style.marginTop='110%';
             document.querySelector('.e').style.display='none';
             document.querySelector('.data').style.display='block';
             document.querySelector('#emblem').style.display='block';
