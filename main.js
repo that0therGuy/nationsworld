@@ -1,4 +1,5 @@
 let defSelect= 'country-name';
+const mediaQuery = window.matchMedia('(min-width: 768px)')
 
 
 let cname=document.querySelector('.name');
@@ -63,7 +64,13 @@ let nations = function(e){
         
         .then(data => data.json())
         .then(item => {
-            document.querySelector('.card').style.marginTop='110%';
+            if (!mediaQuery.matches) {
+                
+                document.querySelector('.card').style.marginTop='110%';
+            }
+            
+            
+            
             document.querySelector('.e').style.display='none';
             document.querySelector('.data').style.display='flex';
             document.querySelector('#emblem').style.display='flex';
@@ -101,7 +108,10 @@ let nations = function(e){
         
         .then(data => data.json())
         .then(item => {
-            document.querySelector('.card').style.marginTop='110%';
+            if (!mediaQuery.matches) {
+                
+                document.querySelector('.card').style.marginTop='110%';
+            }
             document.querySelector('.data').style.display='block';
             document.querySelector('.e').style.display='none';
             document.querySelector('#emblem').style.display='block';
@@ -136,7 +146,12 @@ let nations = function(e){
         
         .then(data => data.json())
         .then(item => {
-            document.querySelector('.card').style.marginTop='110%';
+            const isMobile = navigator.userAgentData.mobile;
+            console.log(isMobile)
+            if (!mediaQuery.matches) {
+                
+                document.querySelector('.card').style.marginTop='110%';
+            }
             document.querySelector('.e').style.display='none';
             document.querySelector('.data').style.display='block';
             document.querySelector('#emblem').style.display='block';
